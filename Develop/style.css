@@ -2,9 +2,22 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  margin-bottom: 60px;
 }
 
-textarea{
+header {
+  background: #3A1C71;
+  background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+}
+
+.container {
+  width: 75%;
+}
+
+#inputGroup-sizing-lg {}
+
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -16,16 +29,21 @@ textarea{
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: white;
+  font-weight: bold;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgba(245, 245, 245, 0.932);
 }
 
-.description{
+.lead {
+  font-size: 22px;
+}
+
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -33,7 +51,8 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  ;
 }
 
 .hour {
