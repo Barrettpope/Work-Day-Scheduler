@@ -1,3 +1,4 @@
+/* Styling added to body content */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -5,88 +6,42 @@ body {
   margin-bottom: 60px;
 }
 
-header {
-  background: #3A1C71;
-  background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
-  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
-}
-
+/* Reducing width of container */
 .container {
   width: 75%;
 }
 
-#currentDay {}
-
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
+/* Styling added to header / jumbpotron */
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background: #3A1C71;
+  background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
+  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);
   color: white;
   font-weight: bold;
   border-radius: 0;
   border-bottom: 10px solid rgba(245, 245, 245, 0.932);
 }
 
+/* Styling added to both paragraph elements in header */
 .lead {
   font-size: 22px;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-  ;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
+/* Styling added to past timeslots */
 .past {
   background-color: #d3d3d3;
-  opacity: .7;
   color: white;
 }
 
+/* Styling added to current timeslots */
 .present {
   background-color: #824173;
-  opacity: .7;
   color: white;
 }
 
+/* Styling added to future timeslots */
 .future {
   background-color: #e38078;
-  opacity: .7 color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
   color: white;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
 }
