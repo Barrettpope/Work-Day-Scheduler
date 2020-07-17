@@ -26,6 +26,7 @@ body {
 /* Styling added to both paragraph elements in header */
 .lead {
   font-size: 22px;
+  padding-top: 20px;
 }
 
 /* Styling added to past timeslots */

@@ -6,7 +6,7 @@ var timeSlots = [];
 var userInput = [];
 var toDos = $(".form-control");
 var saveButton = $(".save-button");
-var resetColors = setInterval(changeColor, 360000)
+var resetColors = setInterval(changeColor, 30000)
 
 // Displays current date in header
 function displayDate() {
@@ -14,7 +14,7 @@ function displayDate() {
 }
 displayDate();
 
-// Modifies color to reflect past, present and future time
+// Modifies color to reflect past, present and future timeslots
 function changeColor() {
     hour = parseInt(moment().format("HH"));
 
@@ -31,7 +31,7 @@ function changeColor() {
 }
 changeColor();
 
-// Saves user input to local storage when save button is clicked
+// Saves user input to page and local storage when save button is clicked
 saveButton.on("click", function (event) {
     event.preventDefault();
     var clickButton = $(this);
@@ -44,9 +44,34 @@ saveButton.on("click", function (event) {
     var valueSlot = $(`#slot${buttonID}`).val();
     var time = $(`#${buttonID}`).text();
 
-    userInput.push({
-        "time": time,
-        "task": valueSlot
-    })
+    var foundMatch = false;
+    for (var i = 0; i < userInput.length; i++) {
+        if (userInput[i].time === time) {
+            userInput[i].task = valueSlot;
+            foundMatch = true;
+        }
+    }
+    if (foundMatch === false) {
+        userInput.push({
+            "time": time,
+            "task": valueSlot,
+        });
+    }
+
     localStorage.setItem("todo", JSON.stringify(userInput));
 });
+
+// Saves todo tasks to page
+function initialize() {
+    var todo = JSON.parse(localStorage.getItem("todo"));
+    for (var i = 0; i < todo.length; i++) {
+        console.log(todo[i]);
+        $("input").each(function () {
+            if ($(this).attr("data-time") === todo[i].time) {
+                $(this).val(todo[i].task);
+            }
+        })
+
+    }
+}
+initialize();
