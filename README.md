@@ -13,7 +13,7 @@ Additionally, the timeslots are color-coded based on the time of day the user is
 Finally, users have the ability to save their tasks to the page by clicking the save button at the end of each timeslot. 
 
 ## Visuals
-![](work-day-scheduler.png)
+![](Develop/work-day-scheduler.png)
 
 ## Link to Deployed Application
 https://barrettpope.github.io/Work-Day-Scheduler/
