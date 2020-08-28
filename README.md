@@ -1,25 +1,27 @@
 # Work-Day-Scheduler
-Work-Day-Scheduler is an interactive application that allows users to organize their daily work tasks by the hour.
+
+## Table of Contents
+* [Description](#description)
+* [Usage](#usage)
+* [Visuals](#visuals)
+* [Deployed Application](#deployed)
+* [Contributing](#contributing)
+* [Support](#support)
 
 ## Description
-Upon entering the applciation, users are greeted with a polished UI featuring a work-day calendar spanning from the hours 8am - 5pm. The header of the application utilizes moment.js to display the current date,and each timeslot in the calendar has input capabilities where users can assign tasks for each hour of the work day. 
+Work-Day-Scheduler is a simple calendar application that allows users to save events for each hour of the day. The app features dynamically updated HTML and CSS powered by jQuery and utlizies the Moment.js library to specify current, present and past times.
 
-Additionally, the timeslots are color-coded based on the time of day the user is accessing the application. Specifically: 
-
-    1. grey signifies past timeslot(s)
-    2. purple signifies current timeslot
-    3. Pink signifies future timeslot(s)
-
-Finally, users have the ability to save their tasks to the page by clicking the save button at the end of each timeslot. 
+## Usage
+This application uses the [Moment.js](https://momentjs.com/) library to dynamically update the date and time.
 
 ## Visuals
 ![](work-day-scheduler.png)
 
-## Link to Deployed Application
+## Deployed Application
 https://barrettpope.github.io/Work-Day-Scheduler/
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. 
 
 ## Support
 For questions, comments or concerns regarding the Work-Day-Scheduler application, please email barrettpope94@gmail.com.
-
-## Contributing
-Pull requests are welcome.
